@@ -15,8 +15,8 @@ PBL_APP_INFO(HTTP_UUID,
 ///////////  personalize this part  ///////////
 #define TOTAL_WHO 5
 #define TOTAL_MSG 6
-const char *nam_list[] = {"Antonio",                   "Lori",                      "Natalie",               "Vince",                          "Dave"};
-const char *who_list[] = {"416#######@sms.rogers.com", "416#######@sms.rogers.com", "416#######@rogers.com", "416#######@msg.koodomobile.com", "416#######@sms.rogers.com"};
+const char *nam_list[] = {"Luke Harlock",                   "Lori",                      "Natalie",               "Vince",                          "Dave"};
+const char *who_list[] = {"07557051017.rogers.com", "416#######@sms.rogers.com", "416#######@rogers.com", "416#######@msg.koodomobile.com", "416#######@sms.rogers.com"};
 const char *msg_list[] = {"OK", "No", "Just%20a%20sec", "Running%20late", "On%20my%20way%20home", "Busy,%20call%20you%20later"};    // repace spaces w/ "%20"
 const char *tmp_list[] = {"OK", "No", "Just a sec",     "Running late",   "On my way home",       "Busy, call you later"};
 ///////////////////////////////////////////////
@@ -38,7 +38,7 @@ void request_mail_to_sms() {
     static char url[256];
 
 ///////////  personalize this part  ///////////
-    strcpy(url, "http://###################.net/mail_to_sms.php?cmd=send");
+    strcpy(url, "http://+447538682194.net/mail_to_sms.php?cmd=send");
 ///////////////////////////////////////////////
 
     strcpy(who, "&who="); strcat(who, who_list[who_sel]); 
